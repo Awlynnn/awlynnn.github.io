@@ -22,3 +22,8 @@ section {
   background: #222;
   border-radius: 10px;
 }
+.project iframe {
+  margin-top: 15px;
+  border-radius: 8px;
+  max-width: 100%;
+}
