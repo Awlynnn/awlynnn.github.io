@@ -10,12 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       const repoCount = document.getElementById("repo-count");
-      const followersCount = document.getElementById("followers-count");
-      const followingCount = document.getElementById("following-count");
-
       if (repoCount) repoCount.textContent = data.public_repos ?? "-";
-      if (followersCount) followersCount.textContent = data.followers ?? "-";
-      if (followingCount) followingCount.textContent = data.following ?? "-";
     })
     .catch(() => {
       const githubSection = document.querySelector(".github");
