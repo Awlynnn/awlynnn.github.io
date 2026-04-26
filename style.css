@@ -390,6 +390,34 @@ body {
   color: var(--apollo-dark);
 }
 
+/* Project Tags */
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--apollo-dark-blue);
+  border: 2px solid var(--apollo-light-blue);
+  color: var(--apollo-ice);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.learned {
+  font-size: 0.85rem;
+  color: var(--apollo-light-gray);
+  font-style: italic;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--apollo-gray);
+}
+
 /* ========================================
    ENGINEERING SKILLS
    ======================================== */
