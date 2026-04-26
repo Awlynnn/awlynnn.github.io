@@ -496,6 +496,51 @@ body {
 }
 
 /* ========================================
+   KTH COURSEWORK SECTION
+   ======================================== */
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.coursework-category {
+  background: var(--apollo-dark-gray);
+  border: 3px solid var(--apollo-teal);
+  padding: 1.5rem;
+}
+
+.coursework-category h3 {
+  color: var(--apollo-ice);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--apollo-teal);
+  padding-bottom: 0.5rem;
+}
+
+.coursework-list {
+  list-style: none;
+}
+
+.coursework-list li {
+  font-size: 0.85rem;
+  color: var(--apollo-light-gray);
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--apollo-gray);
+}
+
+.coursework-list li:last-child {
+  border-bottom: none;
+}
+
+.coursework-list strong {
+  color: var(--accent);
+}
+
+/* ========================================
    FOOTER
    ======================================== */
 footer {
