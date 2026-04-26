@@ -1,37 +1,36 @@
 
 /* ========================================
-   PIXEL ART THEME - Apollo Palette
-   By AdamCYonius
+   PIXEL ART THEME - CloseTrees Palette
+   Inspired by AdamCYonius
    ======================================== */
 
-/* Apollo Palette Colors */
+/* CloseTrees Palette Colors */
 :root {
-  /* Dark tones */
-  --apollo-dark: #1a1c2c;
-  --apollo-dark-blue: #29366f;
-  --apollo-deep-purple: #5d275d;
-  --apollo-dark-brown: #b13e53;
+  /* Main Palette */
+  --forest-deep: #162737;
+  --forest-dark: #182f3a;
+  --sky-blue: #99b6d5;
+  --pale-green: #e2e7c7;
+  --leaf-green: #b8d899;
+  --grass-green: #d1dfad;
   
-  /* Mid tones */
-  --apollo-mid-brown: #ef7d57;
-  --apollo-orange: #ffcd75;
-  --apollo-yellow: #a7f070;
-  --apollo-green: #38b764;
-  --apollo-teal: #257179;
-  --apollo-blue: #29366f;
+  /* Secondary Colors */
+  --mid-forest: #469671;
+  --dark-bluish: #172d39;
+  --trunk-brown: #905656;
+  --deep-shadow: #172b37;
+  --near-black: #162837;
+  --cloud-white: #eeeaec;
   
-  /* Light tones */
-  --apollo-light-blue: #3b5dc9;
-  --apollo-sky: #41a6f6;
-  --apollo-ice: #73eff7;
-  --apollo-white: #f4f4f4;
-  --apollo-light-gray: #94b0c2;
-  --apollo-gray: #566c86;
-  --apollo-dark-gray: #333c57;
-  
-  /* Accent colors */
-  --accent: #ffcd75;
-  --accent-hover: #a7f070;
+  /* Semantic colors */
+  --background: var(--forest-deep);
+  --foreground: var(--sky-blue);
+  --accent: var(--leaf-green);
+  --accent-hover: var(--grass-green);
+  --border: var(--trunk-brown);
+  --card-bg: var(--forest-dark);
+  --text: var(--sky-blue);
+  --text-muted: var(--cloud-white);
 }
 
 /* Reset & Base */
@@ -47,8 +46,8 @@ html {
 
 body {
   font-family: 'Courier New', monospace;
-  background-color: var(--apollo-dark);
-  color: var(--apollo-light-gray);
+  background-color: var(--background);
+  color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -61,8 +60,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: var(--apollo-dark-gray);
-  border-bottom: 4px solid var(--apollo-dark-brown);
+  background: var(--card-bg);
+  border-bottom: 4px solid var(--border);
   z-index: 1000;
   padding: 0.75rem 0;
 }
@@ -83,7 +82,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 0 var(--apollo-dark);
+  text-shadow: 2px 2px 0 var(--background);
 }
 
 .nav-links {
@@ -92,7 +91,7 @@ body {
 }
 
 .nav-links a {
-  color: var(--apollo-light-gray);
+  color: var(--text);
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -120,8 +119,8 @@ body {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 2rem;
-  border: 4px solid var(--apollo-dark-brown);
-  box-shadow: 0 8px 0 var(--apollo-dark);
+  border: 4px solid var(--border);
+  box-shadow: 0 8px 0 var(--background);
 }
 
 .banner-gif {
@@ -144,8 +143,8 @@ body {
 .profile-image {
   width: 200px;
   height: 200px;
-  border: 4px solid var(--apollo-dark-brown);
-  box-shadow: 0 8px 0 var(--apollo-dark);
+  border: 4px solid var(--border);
+  box-shadow: 0 8px 0 var(--background);
   margin-bottom: 1.5rem;
   image-rendering: pixelated;
 }
@@ -156,12 +155,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 0.5rem;
-  text-shadow: 3px 3px 0 var(--apollo-dark);
+  text-shadow: 3px 3px 0 var(--background);
 }
 
 .profile-title {
   font-size: 1.2rem;
-  color: var(--apollo-light-gray);
+  color: var(--text);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -169,7 +168,7 @@ body {
 
 .profile-bio {
   font-size: 1rem;
-  color: var(--apollo-light-gray);
+  color: var(--text);
   max-width: 600px;
   margin-bottom: 2rem;
   line-height: 1.8;
@@ -204,12 +203,12 @@ body {
   background: var(--apollo-dark-brown);
   color: var(--apollo-white);
   transform: translateY(-2px);
-  box-shadow: 0 6px 0 var(--apollo-dark);
+  box-shadow: 0 6px 0 var(--background);
 }
 
 .social-btn:active {
   transform: translateY(2px);
-  box-shadow: 0 2px 0 var(--apollo-dark);
+  box-shadow: 0 2px 0 var(--background);
 }
 
 /* ========================================
